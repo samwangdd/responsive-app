@@ -6,9 +6,10 @@ $vw_fontsize: 75;
   @return ($px / $vw_fontsize) * 1rem;
 }
 
-// 根元素大小使用 vw 单位 
 $vw_design: 750;
+
 html {
+  // 根元素字体使用 vw 单位 
   font-size: ($vw_fontsize / $vw_design) * 100vw;
   // 同时，通过 Media Queries 限制根元素最小值、最大值
   @media screen and (max-width: 320px) {
@@ -26,5 +27,10 @@ body {
   min-width: 320px;
   max-width: 768px; // 兼容 Tablet
   margin: auto;
+}
+
+p {
+  margin-top: rem(8);
+  margin-bottom: rem(8);
 }
 

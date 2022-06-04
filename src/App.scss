@@ -1,9 +1,21 @@
+@import './global.scss';
+
 .App {
-  text-align: center;
+  background-color: rgba(40, 24, 67, 1);
+  height: 100vh;
+}
+
+.App-header {
+  color: '#fff';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(32);
 }
 
 .App-logo {
-  height: 40vmin;
+  height: rem(120);
   pointer-events: none;
 }
 
@@ -11,17 +23,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +36,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  padding: rem(32);
+}
+
+.card {
+ background-color: #fff;
+ border-radius: rem(16);
+ font-size: rem(32);
+ overflow: hidden;
+}
+
+.cardLG {
+ font-size: rem(32);
+ padding: rem(32);
+}
+
+.avatarLG {
+  width: rem(242);
+  height: rem(286);
+  background-color: #ccc;
+  border-radius: rem(16);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.cardList {
+  margin-top: rem(16);
+  height: rem(350);
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardSM {
+  text-align: center;
+  width: rem(218);
+}
+
+.avatarSM {
+  width: '100%';
+  height: rem(208);
+  background-color: #ccc;
+}
+
+.name {
+  font-weight: 500;
+  color: #191919;
+}
+
+.description {
+  font-size: rem(28);
+  font-weight: 400;
+  color: #999999;
 }
